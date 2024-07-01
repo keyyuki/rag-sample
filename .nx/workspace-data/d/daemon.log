@@ -1,0 +1,704 @@
+[NX Daemon Server] - 2024-07-01T08:24:23.585Z - Started listening on: \\.\pipe\nx\C:\Users\DREAMS~1\AppData\Local\Temp\17eed76f1393a9af811c\d.sock
+[NX Daemon Server] - 2024-07-01T08:24:23.588Z - [WATCHER]: Subscribed to changes within: d:\workspace\RAG\sample3 (native)
+[NX Daemon Server] - 2024-07-01T08:24:23.599Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-01T08:24:23.601Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-07-01T08:24:23.601Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-01T08:24:23.603Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-07-01T08:24:23.815Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-07-01T08:24:23.816Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:24:23.816Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:24:25.554Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  AggregateCreateNodesError: An error occurred while processing files for the @nx/webpack/plugin plugin.
+    - apps/backend/webpack.config.js: Cannot find module 'nx/src/lock-file/lock-file'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\update-package-json.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\with-nx.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\config.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\index.js
+  - d:\workspace\RAG\sample3\apps\backend\webpack.config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\utils\webpack\resolve-user-defined-webpack-config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\loader.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\index.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\command-line\run\executor-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\devkit-internals.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\assert-workspace-validity.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\build-project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\project-graph-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\file-watching\file-watcher-sockets.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\start.js
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at Array.exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js:36:20)
+      at LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 1)
+      at processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+      at handleMessage (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:89:9)
+      at d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:55:9
+AggregateCreateNodesError: An error occurred while processing files for the @nx/eslint/plugin plugin.
+    - .eslintrc.json: Failed to load plugin '@nrwl/nx' declared in 'apps\backend\.eslintrc.json » ../../.eslintrc.json#overrides[1]': Cannot find module 'nx/src/utils/target-project-locator'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\rules\enforce-module-boundaries.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@eslint\eslintrc\dist\eslintrc.cjs
+  Referenced from: d:\workspace\RAG\sample3\.eslintrc.json
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at Array.exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\eslint\src\plugins\plugin.js:159:20)
+      at LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 2)
+      at processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+      at handleMessage (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:89:9)
+      at d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:55:9
+[NX Daemon Server] - 2024-07-01T08:24:25.560Z - Time taken for 'Load Nx Plugin: d:\workspace\RAG\sample3\node_modules\nx\src\plugins\project-json\build-nodes\package-json-next-to-project-json' 210.32100003957748ms
+[NX Daemon Server] - 2024-07-01T08:24:25.561Z - Done responding to the client null
+[NX Daemon Server] - 2024-07-01T08:24:25.561Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1949. Response time: 9.
+[NX Daemon Server] - 2024-07-01T08:24:25.568Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-07-01T08:24:25.568Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-07-01T08:24:25.568Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:24:25.569Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-07-01T08:34:58.281Z - Started listening on: \\.\pipe\nx\C:\Users\DREAMS~1\AppData\Local\Temp\17eed76f1393a9af811c\d.sock
+[NX Daemon Server] - 2024-07-01T08:34:58.292Z - [WATCHER]: Subscribed to changes within: D:\workspace\RAG\sample3 (native)
+[NX Daemon Server] - 2024-07-01T08:34:58.294Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-01T08:34:58.296Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-07-01T08:34:58.300Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2024-07-01T08:34:58.302Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-01T08:34:58.302Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2024-07-01T08:34:58.302Z - Handled GLOB. Handling time: 2. Response time: 2.
+[NX Daemon Server] - 2024-07-01T08:35:00.628Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:35:00.628Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:35:00.628Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:35:02.113Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:35:02.113Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:35:02.113Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:35:02.117Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:35:02.117Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:35:02.118Z - Handled HASH_GLOB. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2024-07-01T08:35:02.121Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:35:02.121Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:35:02.121Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:35:02.123Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:35:02.123Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:35:02.123Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:35:02.126Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:35:02.126Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:35:02.126Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:35:02.128Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:35:02.128Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:35:02.128Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:35:02.130Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:35:02.130Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:35:02.130Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:35:02.132Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2024-07-01T08:35:02.133Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2024-07-01T08:35:02.133Z - Handled GLOB. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-07-01T08:35:04.964Z - [REQUEST]: Responding to the client. handleNxWorkspaceFiles
+[NX Daemon Server] - 2024-07-01T08:35:04.964Z - Done responding to the client handleNxWorkspaceFiles
+[NX Daemon Server] - 2024-07-01T08:35:04.965Z - Handled GET_NX_WORKSPACE_FILES. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2024-07-01T08:35:05.069Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-07-01T08:35:05.759Z - [WATCHER]: package-lock.json was modified
+[NX Daemon Server] - 2024-07-01T08:35:05.759Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-07-01T08:35:06.210Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-07-01T08:35:06.210Z - [REQUEST]: package-lock.json
+[NX Daemon Server] - 2024-07-01T08:35:06.210Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:35:07.036Z - Time taken for 'Load Nx Plugin: D:\workspace\RAG\sample3\node_modules\nx\src\plugins\project-json\build-nodes\package-json-next-to-project-json' 342.0543999999936ms
+[NX Daemon Server] - 2024-07-01T08:49:45.404Z - Started listening on: \\.\pipe\nx\C:\Users\DREAMS~1\AppData\Local\Temp\17eed76f1393a9af811c\d.sock
+[NX Daemon Server] - 2024-07-01T08:49:45.415Z - [WATCHER]: Subscribed to changes within: d:\workspace\RAG\sample3 (native)
+[NX Daemon Server] - 2024-07-01T08:49:45.416Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-01T08:49:45.417Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-07-01T08:49:45.418Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-01T08:49:45.420Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-07-01T08:49:47.626Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-07-01T08:49:47.626Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:49:47.626Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:49:54.741Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  AggregateCreateNodesError: An error occurred while processing files for the @nx/webpack/plugin plugin.
+    - apps/backend/webpack.config.js: Cannot find module 'nx/src/lock-file/lock-file'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\update-package-json.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\with-nx.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\config.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\index.js
+  - d:\workspace\RAG\sample3\apps\backend\webpack.config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\utils\webpack\resolve-user-defined-webpack-config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\loader.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\index.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\command-line\run\executor-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\devkit-internals.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\assert-workspace-validity.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\build-project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\project-graph-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\file-watching\file-watcher-sockets.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\start.js
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js:36:20)
+      at async LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at async LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 1)
+      at async processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at async getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at async handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at async handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+AggregateCreateNodesError: An error occurred while processing files for the @nx/eslint/plugin plugin.
+    - .eslintrc.json: Failed to load plugin '@nrwl/nx' declared in 'apps\backend\.eslintrc.json » ../../.eslintrc.json#overrides[1]': Cannot find module 'nx/src/utils/target-project-locator'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\rules\enforce-module-boundaries.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@eslint\eslintrc\dist\eslintrc.cjs
+  Referenced from: d:\workspace\RAG\sample3\.eslintrc.json
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\eslint\src\plugins\plugin.js:159:20)
+      at async LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at async LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 2)
+      at async processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at async getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at async handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at async handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+[NX Daemon Server] - 2024-07-01T08:49:54.747Z - Time taken for 'Load Nx Plugin: d:\workspace\RAG\sample3\node_modules\nx\src\plugins\project-json\build-nodes\package-json-next-to-project-json' 2203.691399999894ms
+[NX Daemon Server] - 2024-07-01T08:49:54.747Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-07-01T08:49:54.747Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2024-07-01T08:49:54.747Z - Done responding to the client null
+[NX Daemon Server] - 2024-07-01T08:49:54.747Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 9320. Response time: 7.
+[NX Daemon Server] - 2024-07-01T08:49:54.748Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-07-01T08:49:54.749Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-07-01T08:49:54.750Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-07-01T08:49:54.750Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:49:54.750Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:49:54.820Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  AggregateCreateNodesError: An error occurred while processing files for the @nx/webpack/plugin plugin.
+    - apps/backend/webpack.config.js: Cannot find module 'nx/src/lock-file/lock-file'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\update-package-json.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\with-nx.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\config.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\index.js
+  - d:\workspace\RAG\sample3\apps\backend\webpack.config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\utils\webpack\resolve-user-defined-webpack-config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\loader.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\index.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\command-line\run\executor-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\devkit-internals.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\assert-workspace-validity.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\build-project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\project-graph-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\file-watching\file-watcher-sockets.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\start.js
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js:36:20)
+      at async LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at async LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 1)
+      at async processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at async getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at async handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at async handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+AggregateCreateNodesError: An error occurred while processing files for the @nx/eslint/plugin plugin.
+    - .eslintrc.json: Failed to load plugin '@nrwl/nx' declared in 'apps\backend\.eslintrc.json » ../../.eslintrc.json#overrides[1]': Cannot find module 'nx/src/utils/target-project-locator'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\rules\enforce-module-boundaries.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@eslint\eslintrc\dist\eslintrc.cjs
+  Referenced from: d:\workspace\RAG\sample3\.eslintrc.json
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\eslint\src\plugins\plugin.js:159:20)
+      at async LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at async LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 2)
+      at async processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at async getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at async handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at async handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+[NX Daemon Server] - 2024-07-01T08:49:54.827Z - Time taken for 'hash changed files from watcher' 0.008000000147148967ms
+[NX Daemon Server] - 2024-07-01T08:49:54.829Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-07-01T08:49:54.829Z - Done responding to the client null
+[NX Daemon Server] - 2024-07-01T08:49:54.829Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 71. Response time: 9.
+[NX Daemon Server] - 2024-07-01T08:49:54.829Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-07-01T08:49:54.830Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-07-01T08:49:54.830Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-01T08:49:54.861Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-07-01T08:49:54.861Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-07-01T08:49:54.862Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:49:54.862Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:49:54.927Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  AggregateCreateNodesError: An error occurred while processing files for the @nx/webpack/plugin plugin.
+    - apps/backend/webpack.config.js: Cannot find module 'nx/src/lock-file/lock-file'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\update-package-json.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\with-nx.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\config.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\index.js
+  - d:\workspace\RAG\sample3\apps\backend\webpack.config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\utils\webpack\resolve-user-defined-webpack-config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\loader.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\index.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\command-line\run\executor-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\devkit-internals.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\assert-workspace-validity.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\build-project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\project-graph-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\file-watching\file-watcher-sockets.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\start.js
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js:36:20)
+      at async LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at async LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 1)
+      at async processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at async getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at async handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at async handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+AggregateCreateNodesError: An error occurred while processing files for the @nx/eslint/plugin plugin.
+    - .eslintrc.json: Failed to load plugin '@nrwl/nx' declared in 'apps\backend\.eslintrc.json » ../../.eslintrc.json#overrides[1]': Cannot find module 'nx/src/utils/target-project-locator'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\rules\enforce-module-boundaries.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@eslint\eslintrc\dist\eslintrc.cjs
+  Referenced from: d:\workspace\RAG\sample3\.eslintrc.json
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\eslint\src\plugins\plugin.js:159:20)
+      at async LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at async LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 2)
+      at async processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at async getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at async handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at async handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+[NX Daemon Server] - 2024-07-01T08:49:54.933Z - Time taken for 'hash changed files from watcher' 0.007099999813362956ms
+[NX Daemon Server] - 2024-07-01T08:49:54.933Z - Done responding to the client null
+[NX Daemon Server] - 2024-07-01T08:49:54.933Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 66. Response time: 6.
+[NX Daemon Server] - 2024-07-01T08:49:54.942Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-07-01T08:49:54.944Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-07-01T08:49:54.944Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-07-01T08:49:54.944Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:49:54.944Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:49:55.018Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  AggregateCreateNodesError: An error occurred while processing files for the @nx/webpack/plugin plugin.
+    - apps/backend/webpack.config.js: Cannot find module 'nx/src/lock-file/lock-file'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\update-package-json.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\with-nx.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\config.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\index.js
+  - d:\workspace\RAG\sample3\apps\backend\webpack.config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\utils\webpack\resolve-user-defined-webpack-config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\loader.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\index.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\command-line\run\executor-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\devkit-internals.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\assert-workspace-validity.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\build-project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\project-graph-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\file-watching\file-watcher-sockets.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\start.js
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js:36:20)
+      at async LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at async LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 1)
+      at async processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at async getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at async handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at async handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+AggregateCreateNodesError: An error occurred while processing files for the @nx/eslint/plugin plugin.
+    - .eslintrc.json: Failed to load plugin '@nrwl/nx' declared in 'apps\backend\.eslintrc.json » ../../.eslintrc.json#overrides[1]': Cannot find module 'nx/src/utils/target-project-locator'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\rules\enforce-module-boundaries.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@eslint\eslintrc\dist\eslintrc.cjs
+  Referenced from: d:\workspace\RAG\sample3\.eslintrc.json
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\eslint\src\plugins\plugin.js:159:20)
+      at async LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at async LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 2)
+      at async processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at async getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at async handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at async handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+[NX Daemon Server] - 2024-07-01T08:49:55.025Z - Time taken for 'hash changed files from watcher' 0.007400000002235174ms
+[NX Daemon Server] - 2024-07-01T08:49:55.025Z - Done responding to the client null
+[NX Daemon Server] - 2024-07-01T08:49:55.026Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 74. Response time: 7.
+[NX Daemon Server] - 2024-07-01T08:49:56.357Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2024-07-01T08:49:56.357Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-07-01T08:49:56.357Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2024-07-01T08:49:56.358Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-07-01T08:49:56.359Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-07-01T08:49:56.359Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:49:56.359Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:49:56.434Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  AggregateCreateNodesError: An error occurred while processing files for the @nx/webpack/plugin plugin.
+    - apps/backend/webpack.config.js: Cannot find module 'nx/src/lock-file/lock-file'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\update-package-json.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\with-nx.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\config.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\index.js
+  - d:\workspace\RAG\sample3\apps\backend\webpack.config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\utils\webpack\resolve-user-defined-webpack-config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\loader.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\index.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\command-line\run\executor-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\devkit-internals.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\assert-workspace-validity.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\build-project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\project-graph-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\file-watching\file-watcher-sockets.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\start.js
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js:36:20)
+      at async LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at async LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 1)
+      at async processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at async getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at async handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at async handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+AggregateCreateNodesError: An error occurred while processing files for the @nx/eslint/plugin plugin.
+    - .eslintrc.json: Failed to load plugin '@nrwl/nx' declared in 'apps\backend\.eslintrc.json » ../../.eslintrc.json#overrides[1]': Cannot find module 'nx/src/utils/target-project-locator'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\rules\enforce-module-boundaries.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@eslint\eslintrc\dist\eslintrc.cjs
+  Referenced from: d:\workspace\RAG\sample3\.eslintrc.json
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\eslint\src\plugins\plugin.js:159:20)
+      at async LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at async LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 2)
+      at async processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at async getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at async handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at async handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+[NX Daemon Server] - 2024-07-01T08:49:56.439Z - Time taken for 'hash changed files from watcher' 0.00809999997727573ms
+[NX Daemon Server] - 2024-07-01T08:49:56.439Z - Done responding to the client null
+[NX Daemon Server] - 2024-07-01T08:49:56.439Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 76. Response time: 5.
+[NX Daemon Server] - 2024-07-01T08:49:56.448Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-07-01T08:49:56.448Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-07-01T08:49:56.448Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:49:56.449Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-07-01T08:50:01.126Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2024-07-01T08:50:01.126Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-07-01T08:50:01.127Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2024-07-01T08:50:01.130Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-07-01T08:50:01.130Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-07-01T08:50:01.130Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:50:01.130Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:50:01.192Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  AggregateCreateNodesError: An error occurred while processing files for the @nx/webpack/plugin plugin.
+    - apps/backend/webpack.config.js: Cannot find module 'nx/src/lock-file/lock-file'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\update-package-json.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\with-nx.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\config.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\index.js
+  - d:\workspace\RAG\sample3\apps\backend\webpack.config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\utils\webpack\resolve-user-defined-webpack-config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\loader.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\index.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\command-line\run\executor-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\devkit-internals.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\assert-workspace-validity.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\build-project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\project-graph-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\file-watching\file-watcher-sockets.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\start.js
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js:36:20)
+      at async LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at async LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 1)
+      at async processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at async getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at async handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at async handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+AggregateCreateNodesError: An error occurred while processing files for the @nx/eslint/plugin plugin.
+    - .eslintrc.json: Failed to load plugin '@nrwl/nx' declared in 'apps\backend\.eslintrc.json » ../../.eslintrc.json#overrides[1]': Cannot find module 'nx/src/utils/target-project-locator'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\rules\enforce-module-boundaries.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@eslint\eslintrc\dist\eslintrc.cjs
+  Referenced from: d:\workspace\RAG\sample3\.eslintrc.json
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\eslint\src\plugins\plugin.js:159:20)
+      at async LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at async LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 2)
+      at async processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at async getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at async handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at async handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+[NX Daemon Server] - 2024-07-01T08:50:01.197Z - Time taken for 'hash changed files from watcher' 0.0071000000461936ms
+[NX Daemon Server] - 2024-07-01T08:50:01.197Z - Done responding to the client null
+[NX Daemon Server] - 2024-07-01T08:50:01.197Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 62. Response time: 5.
+[NX Daemon Server] - 2024-07-01T08:50:01.206Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-07-01T08:52:15.308Z - Started listening on: \\.\pipe\nx\C:\Users\DREAMS~1\AppData\Local\Temp\17eed76f1393a9af811c\d.sock
+[NX Daemon Server] - 2024-07-01T08:52:15.311Z - [WATCHER]: Subscribed to changes within: d:\workspace\RAG\sample3 (native)
+[NX Daemon Server] - 2024-07-01T08:52:15.321Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-01T08:52:15.322Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-07-01T08:52:15.322Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-01T08:52:15.324Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-07-01T08:52:15.524Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-07-01T08:52:15.524Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:52:15.524Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:52:16.162Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  AggregateCreateNodesError: An error occurred while processing files for the @nx/webpack/plugin plugin.
+    - apps/backend/webpack.config.js: Cannot find module 'nx/src/lock-file/lock-file'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\update-package-json.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\with-nx.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\config.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\index.js
+  - d:\workspace\RAG\sample3\apps\backend\webpack.config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\utils\webpack\resolve-user-defined-webpack-config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\loader.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\index.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\command-line\run\executor-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\devkit-internals.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\assert-workspace-validity.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\build-project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\project-graph-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\file-watching\file-watcher-sockets.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\start.js
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js:36:20)
+      at async LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at async LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 1)
+      at async processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at async getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at async handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at async handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+AggregateCreateNodesError: An error occurred while processing files for the @nx/eslint/plugin plugin.
+    - .eslintrc.json: Failed to load plugin '@nrwl/nx' declared in 'apps\backend\.eslintrc.json » ../../.eslintrc.json#overrides[1]': Cannot find module 'nx/src/utils/target-project-locator'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\rules\enforce-module-boundaries.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@eslint\eslintrc\dist\eslintrc.cjs
+  Referenced from: d:\workspace\RAG\sample3\.eslintrc.json
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\eslint\src\plugins\plugin.js:159:20)
+      at async LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at async LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 2)
+      at async processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at async getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at async handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at async handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+[NX Daemon Server] - 2024-07-01T08:52:16.168Z - Time taken for 'Load Nx Plugin: d:\workspace\RAG\sample3\node_modules\nx\src\plugins\project-json\build-nodes\package-json-next-to-project-json' 198.02969999983907ms
+[NX Daemon Server] - 2024-07-01T08:52:16.169Z - Done responding to the client null
+[NX Daemon Server] - 2024-07-01T08:52:16.169Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 838. Response time: 7.
+[NX Daemon Server] - 2024-07-01T08:52:16.177Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-07-01T08:52:16.177Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-07-01T08:52:16.177Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:52:16.178Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-07-01T08:52:28.368Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-07-01T08:52:28.369Z - [WATCHER]: nx.json was modified
+[NX Daemon Server] - 2024-07-01T08:52:28.480Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-07-01T08:52:28.480Z - [REQUEST]: nx.json
+[NX Daemon Server] - 2024-07-01T08:52:28.480Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:52:28.543Z - Time taken for 'hash changed files from watcher' 0.24699999997392297ms
+[NX Daemon Server] - 2024-07-01T08:52:29.373Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-01T08:52:29.373Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-07-01T08:52:29.373Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-01T08:52:29.374Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-07-01T08:52:29.375Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-07-01T08:52:29.375Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:52:29.375Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:52:29.443Z - [REQUEST]: Responding to the client with an error. Error when preparing serialized project graph. Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+Failed to process project graph. Run "nx reset" to fix this. Please report the issue if you keep seeing it.
+  AggregateCreateNodesError: An error occurred while processing files for the @nx/webpack/plugin plugin.
+    - apps/backend/webpack.config.js: Cannot find module 'nx/src/lock-file/lock-file'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\update-package-json.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\utils\package-json\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\js\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\with-nx.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\src\utils\config.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\webpack\index.js
+  - d:\workspace\RAG\sample3\apps\backend\webpack.config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\utils\webpack\resolve-user-defined-webpack-config.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\@nx\webpack\plugin.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\loader.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\index.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\command-line\run\executor-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\devkit-internals.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\assert-workspace-validity.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\build-project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\project-graph.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\utils\project-graph-utils.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\file-watching\file-watcher-sockets.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js
+  - d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\start.js
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\webpack\src\plugins\plugin.js:36:20)
+      at async LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at async LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 1)
+      at async processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at async getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at async handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at async handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+AggregateCreateNodesError: An error occurred while processing files for the @nx/eslint/plugin plugin.
+    - .eslintrc.json: Failed to load plugin '@nrwl/nx' declared in 'apps\backend\.eslintrc.json » ../../.eslintrc.json#overrides[1]': Cannot find module 'nx/src/utils/target-project-locator'
+  Require stack:
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\rules\enforce-module-boundaries.js
+  - d:\workspace\RAG\sample3\node_modules\@nrwl\eslint-plugin-nx\src\index.js
+  - d:\workspace\RAG\sample3\node_modules\@eslint\eslintrc\dist\eslintrc.cjs
+  Referenced from: d:\workspace\RAG\sample3\.eslintrc.json
+      at createNodesFromFiles (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\utils.js:58:15)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async exports.createNodesV2 (d:\workspace\RAG\sample3\node_modules\@nx\eslint\src\plugins\plugin.js:159:20)
+      at async LoadedNxPlugin.createNodes (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:31:36)
+      at async LoadedNxPlugin.createNodes.<computed> (d:\workspace\RAG\sample3\node_modules\nx\src\project-graph\plugins\internal-api.js:41:28)
+      at async Promise.all (index 2)
+      at async processFilesAndCreateAndSerializeProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:148:43)
+      at async getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at async handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at async handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+[NX Daemon Server] - 2024-07-01T08:52:29.448Z - Time taken for 'hash changed files from watcher' 0.006799999857321382ms
+[NX Daemon Server] - 2024-07-01T08:52:29.448Z - Done responding to the client null
+[NX Daemon Server] - 2024-07-01T08:52:29.448Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 69. Response time: 5.
+[NX Daemon Server] - 2024-07-01T08:52:29.456Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-07-01T08:52:29.456Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-07-01T08:52:29.456Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:52:29.456Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-07-01T08:53:28.423Z - Started listening on: \\.\pipe\nx\C:\Users\DREAMS~1\AppData\Local\Temp\17eed76f1393a9af811c\d.sock
+[NX Daemon Server] - 2024-07-01T08:53:28.426Z - [WATCHER]: Subscribed to changes within: d:\workspace\RAG\sample3 (native)
+[NX Daemon Server] - 2024-07-01T08:53:28.428Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-01T08:53:28.431Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-07-01T08:53:28.431Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-01T08:53:28.433Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-07-01T08:53:28.600Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-07-01T08:53:28.600Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:53:28.600Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:53:30.781Z - Started listening on: \\.\pipe\nx\C:\Users\DREAMS~1\AppData\Local\Temp\17eed76f1393a9af811c\d.sock
+[NX Daemon Server] - 2024-07-01T08:53:30.785Z - [WATCHER]: Subscribed to changes within: d:\workspace\RAG\sample3 (native)
+[NX Daemon Server] - 2024-07-01T08:53:30.787Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-01T08:53:30.788Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-07-01T08:53:30.790Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-01T08:53:30.793Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2024-07-01T08:53:30.794Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2024-07-01T08:53:30.794Z - Handled GLOB. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2024-07-01T08:53:31.024Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:53:31.024Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:53:31.024Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:53:41.384Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:53:41.384Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:53:41.384Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:53:41.439Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:53:41.439Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:53:41.439Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:53:45.617Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:53:45.617Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:53:45.617Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:53:45.619Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:53:45.619Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:53:45.619Z - Handled HASH_GLOB. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:53:45.621Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:53:45.621Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:53:45.621Z - Handled HASH_GLOB. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:53:45.623Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:53:45.623Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:53:45.623Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:53:45.625Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:53:45.625Z - Done responding to the client handleHashGlob
+[NX Daemon Server] - 2024-07-01T08:53:45.625Z - Handled HASH_GLOB. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:53:45.626Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2024-07-01T08:53:45.626Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2024-07-01T08:53:45.626Z - Handled GLOB. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:53:45.628Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2024-07-01T08:53:45.629Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2024-07-01T08:53:45.629Z - Handled GLOB. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-07-01T08:53:54.507Z - [REQUEST]: Responding to the client. handleNxWorkspaceFiles
+[NX Daemon Server] - 2024-07-01T08:53:54.507Z - Done responding to the client handleNxWorkspaceFiles
+[NX Daemon Server] - 2024-07-01T08:53:54.507Z - Handled GET_NX_WORKSPACE_FILES. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:53:54.607Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-07-01T08:53:54.608Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-07-01T08:53:54.608Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-07-01T08:53:54.608Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-07-01T08:54:34.568Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-07-01T08:54:34.570Z - [WATCHER]: migrations.json was deleted
+[NX Daemon Server] - 2024-07-01T08:54:34.863Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-07-01T08:54:34.863Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:54:34.863Z - [REQUEST]: migrations.json
+[NX Daemon Server] - 2024-07-01T08:54:36.097Z - Time taken for 'Load Nx Plugin: d:\workspace\RAG\sample3\node_modules\nx\src\plugins\project-json\build-nodes\package-json-next-to-project-json' 182.53590000001714ms

@@ -1,0 +1,26 @@
+Daemon process terminated and closed the connection
+
+Messages from the log:
+      at async getCachedSerializedProjectGraphPromise (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\project-graph-incremental-recomputation.js:46:16)
+      at async handleRequestProjectGraph (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\handle-request-project-graph.js:12:24)
+      at async handleResult (d:\workspace\RAG\sample3\node_modules\nx\src\daemon\server\server.js:130:16)
+[NX Daemon Server] - 2024-07-01T08:52:29.448Z - Time taken for 'hash changed files from watcher' 0.006799999857321382ms
+[NX Daemon Server] - 2024-07-01T08:52:29.448Z - Done responding to the client null
+[NX Daemon Server] - 2024-07-01T08:52:29.448Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 69. Response time: 5.
+[NX Daemon Server] - 2024-07-01T08:52:29.456Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-07-01T08:52:29.456Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-07-01T08:52:29.456Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-07-01T08:52:29.456Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-07-01T08:53:28.423Z - Started listening on: \\.\pipe\nx\C:\Users\DREAMS~1\AppData\Local\Temp\17eed76f1393a9af811c\d.sock
+[NX Daemon Server] - 2024-07-01T08:53:28.426Z - [WATCHER]: Subscribed to changes within: d:\workspace\RAG\sample3 (native)
+[NX Daemon Server] - 2024-07-01T08:53:28.428Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-01T08:53:28.431Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-07-01T08:53:28.431Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-07-01T08:53:28.433Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-07-01T08:53:28.600Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-07-01T08:53:28.600Z - [REQUEST]: 
+[NX Daemon Server] - 2024-07-01T08:53:28.600Z - [REQUEST]: 
+
+
+
+More information: d:\workspace\RAG\sample3\.nx\workspace-data\d\daemon.log
